@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeCalc", "GradeCalc.csproj", "{E4FB705F-D0D3-4C94-AC53-125AE64E5F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIControlsExploration", "..\UIControlsExploration\UIControlsExploration.csproj", "{E41917D9-4532-48B5-8704-6E6C0272A236}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4FB705F-D0D3-4C94-AC53-125AE64E5F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FB705F-D0D3-4C94-AC53-125AE64E5F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FB705F-D0D3-4C94-AC53-125AE64E5F8E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E4FB705F-D0D3-4C94-AC53-125AE64E5F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FB705F-D0D3-4C94-AC53-125AE64E5F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41917D9-4532-48B5-8704-6E6C0272A236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41917D9-4532-48B5-8704-6E6C0272A236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41917D9-4532-48B5-8704-6E6C0272A236}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E41917D9-4532-48B5-8704-6E6C0272A236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41917D9-4532-48B5-8704-6E6C0272A236}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61833C0A-7D63-4636-857F-4B77AEDCEA4B}
+	EndGlobalSection
+EndGlobal
