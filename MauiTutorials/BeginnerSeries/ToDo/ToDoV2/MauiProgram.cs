@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using ToDoV2.ViewModel;
 
 namespace ToDoV2
 {
@@ -15,8 +16,11 @@ namespace ToDoV2
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
