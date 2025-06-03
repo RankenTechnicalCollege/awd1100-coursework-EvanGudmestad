@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="Practice.MainPage">  
+
+    <VerticalStackLayout  
+        Padding="20"  
+        Spacing="15"  
+        HorizontalOptions="Center"  
+        VerticalOptions="Center">
+
+        <Label  
+            Text="Factorial Calculator"  
+            FontSize="28"  
+            FontAttributes="Bold"  
+            TextColor="#333333"  
+            HorizontalOptions="Center" />  
+
+        <Label  
+            Text="Enter a non-negative integer:"  
+            FontSize="16"  
+            TextColor="#555555"  
+            HorizontalOptions="Center" />  
+
+        <Entry  
+            x:Name="NumberEntry"  
+            Placeholder="e.g., 5"  
+            Keyboard="Numeric"  
+            FontSize="18"  
+            HorizontalOptions="Center"  
+            Margin="0,10,0,10"  
+            MaxLength="3"  />  
+
+        <Button  
+            Text="Calculate Factorial"  
+            Clicked="CalculateFactorial_Clicked"  
+            FontSize="18"  
+            BackgroundColor="#007ACC"  
+            TextColor="White"  
+            CornerRadius="8"  
+            Padding="15"  
+            HorizontalOptions="Center" />  
+
+        <Label  
+            x:Name="ResultLabel"  
+            Text="Result will appear here."  
+            FontSize="20"  
+            FontAttributes="Italic"  
+            TextColor="#007ACC"  
+            HorizontalOptions="Center"  
+            Margin="0,20,0,0" />
+        <Button Text="Go to Income Tax Problem" Clicked="GoToIncomeTaxPage_Clicked"/>
+
+    </VerticalStackLayout>  
+
+</ContentPage>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FactorialAndIncomeTax.IncomeTaxPage"
+             Title="IncomeTaxPage">
+    <VerticalStackLayout Spacing="20" Padding="30">
+        <Label Text="Filing Status:" FontAttributes="Bold"/>
+        <Picker x:Name="picStatus">
+            <Picker.Items>
+                <x:String>Single</x:String>
+                <x:String>Married Filing Jointly</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry x:Name="txtIncome" Placeholder="Enter your income" Keyboard="Numeric"/>
+        <Button Text="Calculate Tax" Clicked="CalculateTax_Clicked"/>
+        <Label x:Name="lblResult" FontSize="Medium" />
+        <Button Text="Back" Clicked="Back_Clicked" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
