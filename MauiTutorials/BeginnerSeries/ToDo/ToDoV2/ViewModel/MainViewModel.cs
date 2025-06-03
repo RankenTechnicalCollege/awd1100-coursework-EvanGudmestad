@@ -7,11 +7,12 @@ namespace ToDoV2.ViewModel
 {
     public partial class MainViewModel : ObservableObject
     {
-        public MainViewModel()
+        IConnectivity connectivity;
+        public MainViewModel(IConnectivity connectivity)
         {
             // Initialize the collection with some items
             items = new ObservableCollection<string>();
-
+            this.connectivity = connectivity;
         }
 
         [ObservableProperty]
@@ -21,8 +22,15 @@ namespace ToDoV2.ViewModel
         string text;
 
         [RelayCommand]
-        void Add()
+        async void Add()
         {
+            if(connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                // Show an alert or message to the user about no internet connection
+                await Shell.Current.DisplayAlert("No Internet", "Please check your internet connection.", "OK");
+                return;
+            }
+
             //add our item
             if (!string.IsNullOrWhiteSpace(Text))
             {
